@@ -1,0 +1,83 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 200px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #444;
+}
+
+.dark-mode-toggle-button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.dark-mode-toggle-button:hover {
+  cursor: pointer;
+  background-color: #444;
+}
