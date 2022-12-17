@@ -5,11 +5,18 @@ import './App.css';
 
 function App() {
   const [value, setValue] = useState('');
-  const [max, setMax] = useState('');
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+  };
+
+  const setMinValue = (min) => {
+    // set min value here
+  };
+
+  const setMaxValue = (max) => {
+    // set max value here
   };
 
   return (
@@ -33,16 +40,11 @@ function App() {
       </div>
       <div className="feature-container">
         <h1 className="feature-title">Random Number Generator</h1>
-        <input
-          type="number"
-          value={max}
-          onChange={e => setMax(e.target.value)}
-          className="input"
-        />
-        <RandomNumberGenerator max={max} />
+        <RandomNumberGenerator setMin={setMinValue} setMax={setMaxValue} />
       </div>
     </div>
   );
 }
 
 export default App;
+
